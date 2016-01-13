@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>QueryResult</title>
+</head>
+<body>
+查询结果：<br>
+
+<form action="/search/">
+    <label for="query">Query</label>
+    <input type="text" name="query" id="query" value="{{ query }}"/>
+    <input type="submit" value="SEARCH">
+</form>
+总数：{{ total }}
+费时：{{ took }}
+{% for item in result %}
+    <li>{{ item }}</li>
+    <hr>
+{% endfor %}
+</body>
+</html>

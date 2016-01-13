@@ -1,0 +1,5 @@
+/Spider/.idea/
+/Spider/target/
+/Spider/Spider.iml
+/WebUI/.idea/
+/WebUI/*/*.pyc
